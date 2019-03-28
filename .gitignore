@@ -138,6 +138,8 @@ bin/
 tmp/
 *.tmp
 *.bak
+.idea*
+idea/*
 *.swp
 *~.nib
 local.properties
