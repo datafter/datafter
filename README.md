@@ -1,4 +1,4 @@
-###Getting Started Projetc Datafter
+### Getting Started Projetc Datafter
  
 1. Clone project "datafter":
 
