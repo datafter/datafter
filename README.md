@@ -26,17 +26,21 @@ Option config app development:
 ```markdown
 export RAILS_ENV=development
 ```
-    
-5. Run project Serve
+ 
+5. Replace key and token FACEBOOK
+-> file: config/initializers/devise.rb, line 300 
+``config.omniauth :facebook, "YOUR App ID", "YOUR App Secret", callback_url: "http://localhost:3000/users/auth/facebook/callback"``
+
+6. Run project Serve
 ```markdown
 rails s (or) rails server
 ```
 
 Run with --help or -h for options.
 
-6. Go to http://localhost:3000 and you'll see: "Yay! You’re on Rails!"
+7. Go to http://localhost:3000 and you'll see: "Yay! You’re on Rails!"
 
-7. Follow the guidelines to start developing your application. You may find the following resources handy:
+8. Follow the guidelines to start developing your application. You may find the following resources handy:
 
     - Getting Started with Rails
     - Ruby on Rails Guides
