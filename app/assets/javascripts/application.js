@@ -12,5 +12,16 @@
 //
 //= require rails-ujs
 //= require activestorage
+//= require jquery3
+//= require jquery_ujs
+//= require popper
+//= require bootstrap
 //= require turbolinks
+//= require pickadate/picker
+//= require pickadate/picker.date
+//= require pickadate/translations/fr_FR
+//= require pickadate/picker.time
 //= require_tree .
+
+$('.datepicker').pickadate()
+$('.timepicker').pickatime()
