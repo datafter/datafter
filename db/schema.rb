@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_09_202653) do
+ActiveRecord::Schema.define(version: 2019_04_14_145436) do
 
   create_table "blogs", force: :cascade do |t|
     t.integer "user_id"
@@ -38,9 +38,10 @@ ActiveRecord::Schema.define(version: 2019_04_09_202653) do
     t.string "unconfirmed_email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
     t.string "provider"
     t.string "uid"
-    t.string "name"
+    t.string "username"
     t.text "image"
     t.string "first_name"
     t.string "last_name"
