@@ -28,8 +28,10 @@ export RAILS_ENV=development
 ```
  
 5. Replace key and token FACEBOOK
--> file: config/initializers/devise.rb, line 300 
-``config.omniauth :facebook, "YOUR App ID", "YOUR App Secret", callback_url: "http://localhost:3000/users/auth/facebook/callback"``
+- local_env.yml
+    - Copy `cp config/_env.yml config/local_env.yml`
+    - Edit local_env.yml: `GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET ` and ` FACEBOOK_CLIENT_ID, FACEBOOK_CLIENT_SECRET` 
+
 
 6. Run project Serve
 ```markdown
