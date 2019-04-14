@@ -299,4 +299,13 @@ Devise.setup do |config|
   #
   # config.omniauth :facebook, "App ID", "App Secret", callback_url: "http://localhost:3000/auth/auth/facebook/callback"
   #
+  config.omniauth :facebook, ENV['FACEBOOK_CLIENT_ID'], ENV['FACEBOOK_CLIENT_SECRET'], callback_url: "http://localhost:3000/auth/auth/facebook/callback"
+
+
+  # Add the credentials from your Google application to your secrets
+  # Configure Google omniauth with proper scope
+  config.omniauth :google_oauth2, ENV['GOOGLE_CLIENT_ID'], ENV['GOOGLE_CLIENT_SECRET'], {
+      callback_url: "http://localhost:3000/auth/auth/google_oauth2/callback",
+      scope: "contacts.readonly,userinfo.email"
+  }
 end
