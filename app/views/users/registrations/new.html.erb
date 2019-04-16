@@ -5,23 +5,22 @@
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, required: true, autofocus: true, autocomplete: "email" %>
   </div>
 
   <div class="field">
     <%= f.label :first_name %><br />
-    <%= f.text_field :first_name, autofocus: true, autocomplete: "first name" %>
+    <%= f.text_field :first_name, required: true, autofocus: true, autocomplete: "first name" %>
   </div>
 
   <div class="field">
     <%= f.label :last_name %><br />
-    <%= f.text_field :last_name, autofocus: true, autocomplete: "last name" %>
+    <%= f.text_field :last_name, required: true, autofocus: true, autocomplete: "last name" %>
   </div>
-  <%= label_tag :date %>
-  <%= text_field_tag(:date, value = nil, html_options = {class: 'form-control datepicker', placeholder: 'mm/dd/yyyy' }) %>
-  <%= label_tag :time %>
-  <%= text_field_tag(:time, value = nil, html_options = { class: 'form-control timepicker', placeholder: 'hh:mm' }) %>
-  <div><%= f.label :date_of_birth %><br />
+  <%= label_tag :date_of_birth %>
+  <%= text_field_tag(:date_of_birth, value = nil, html_options = {class: 'form-control datepicker', placeholder: 'mm/dd/yyyy' }) %>
+
+   <div><%= f.label :date_of_birth %><br />
     <%= f.date_select :date_of_birth %>
   </div>
 
@@ -30,12 +29,12 @@
     <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, required: true, autocomplete: "new-password" %>
   </div>
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation, required: true, autocomplete: "new-password" %>
   </div>
 
   <div class="actions">
