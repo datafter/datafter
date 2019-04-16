@@ -27,9 +27,12 @@ Option config app development:
 export RAILS_ENV=development
 ```
  
-5. Replace key and token FACEBOOK
+5. Replace auth: id and secret => providers [GOOGLE and FACEBOOK]
 - local_env.yml
     - Copy `cp config/_env.yml config/local_env.yml`
+- Generate keys:
+    - For GOOGLE: https://medium.com/@pablo127/google-api-authentication-with-oauth-2-on-the-example-of-gmail-a103c897fd98
+    - For FACEBOOK: https://elfsight.com/blog/2017/10/how-to-get-facebook-access-token/
     - Edit local_env.yml: `GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET ` and ` FACEBOOK_CLIENT_ID, FACEBOOK_CLIENT_SECRET` 
 
 
