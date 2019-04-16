@@ -26,6 +26,10 @@ gem 'mini_racer', platforms: :ruby
 
 gem 'jquery-rails'
 
+gem 'carrierwave'
+
+gem 'mini_magick'
+
 gem 'pickadate-rails'
 
 gem 'bootstrap', '~> 4.3.1'

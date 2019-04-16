@@ -18,9 +18,9 @@
     <%= f.text_field :last_name, required: true, autofocus: true, autocomplete: "last name" %>
   </div>
 
-  <div class="field">
-    <%= f.label :avatar do %>
-      <%= f.file_field :avatar %>
+  <div class="form-group">
+    <%= f.label :avatar do %><br />
+      <%= f.file_field :avatar, class: "form-control" %>
       <%= f.hidden_field :avatar_cache %>
     <% end %>
   </div>
