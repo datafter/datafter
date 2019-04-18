@@ -1,4 +1,8 @@
 ### Getting Started Projetc Datafter
+
+Init variables environment: config/local_env.yml
+
+    - For send email: gmail_username and gmail_password      
  
 1. Clone project "datafter":
 
