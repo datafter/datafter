@@ -12,3 +12,11 @@ GOOGLE_CLIENT_SECRET: ''
 
 FACEBOOK_CLIENT_ID: ''
 FACEBOOK_CLIENT_SECRET: ''
+
+gmail_username: ''
+gmail_password: ''
+
+MYSQL_PASSWORD: ''
+MYSQL_USERNAME: ''
+MYSQL_HOST: ''
+DATABASE_NAME: ''

@@ -2,8 +2,9 @@
 
 Init variables environment: config/local_env.yml
 
-    - For send email: gmail_username and gmail_password      
- 
+    - For send email: gmail_username and gmail_password and 
+    - connect db mysql dev (MYSQL_HOST, MYSQL_PASSWORD, MYSQL_USERNAME and DATABASE_NAME)
+    
 1. Clone project "datafter":
 
 ```markdown
@@ -39,17 +40,21 @@ export RAILS_ENV=development
     - For FACEBOOK: https://elfsight.com/blog/2017/10/how-to-get-facebook-access-token/
     - Edit local_env.yml: `GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET ` and ` FACEBOOK_CLIENT_ID, FACEBOOK_CLIENT_SECRET` 
 
+6. LAUNCH migrate db and set env=development
+```markdown
+bin/rails db:migrate RAILS_ENV=development
+```
 
-6. Run project Serve
+7. Run project Serve
 ```markdown
 rails s (or) rails server
 ```
 
 Run with --help or -h for options.
 
-7. Go to http://localhost:3000 and you'll see: "Yay! You’re on Rails!"
+8. Go to http://localhost:3000 and you'll see: "Yay! You’re on Rails!"
 
-8. Follow the guidelines to start developing your application. You may find the following resources handy:
+9. Follow the guidelines to start developing your application. You may find the following resources handy:
 
     - Getting Started with Rails
     - Ruby on Rails Guides
