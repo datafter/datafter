@@ -67,7 +67,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: demo_test
+  database: <%= ENV['DATABASE_NAME'] %>
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -90,4 +90,5 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  database: <%= ENV['DATABASE_NAME'] %>
+  # url: <%= ENV['DATABASE_URL'] %>

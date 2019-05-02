@@ -42,7 +42,8 @@ export RAILS_ENV=development
 
 6. LAUNCH migrate db and set env=development
 ```markdown
-bin/rails db:migrate RAILS_ENV=development
+rake db:create
+rails db:migrate RAILS_ENV=development
 ```
 
 7. Run project Serve
